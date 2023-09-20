@@ -6,9 +6,11 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.Button
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.Icon
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -48,6 +50,13 @@ fun ProductsScreen(navController:NavHostController) {
         modifier = Modifier.fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
+
+
+        Icon(painter = painterResource(id = R.drawable.shoppingcart),
+            contentDescription =null,
+            Modifier.size(170.dp,)
+        )
+
         Text(text = "All Products",
             color = Color.White,
             fontSize = 30.sp,

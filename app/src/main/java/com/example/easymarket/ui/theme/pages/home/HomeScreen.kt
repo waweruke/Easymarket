@@ -41,9 +41,9 @@ fun HomeScreen(navController: NavHostController) {
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
 
-        Icon(painter = painterResource(id = R.drawable.marketlogo),
+        Icon(painter = painterResource(id = R.drawable.shoppingcart),
             contentDescription =null,
-            Modifier.size(80.dp,)
+            Modifier.size(170.dp,)
         )
 
         Text(text = "Welcome to home screen",
