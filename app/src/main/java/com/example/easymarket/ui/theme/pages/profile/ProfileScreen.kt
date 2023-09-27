@@ -23,6 +23,7 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.example.easymarket.R
+import com.example.easymarket.navigation.ROUTE_UPLOAD
 import com.example.easymarket.ui.theme.EasyMarketTheme
 
 @Composable
@@ -55,7 +56,7 @@ fun ProfileScreen(navContoller:NavHostController){
             textDecoration = TextDecoration.Underline,
             fontWeight = FontWeight.Bold)
 
-Button(onClick = { /*TODO*/ }) {
+Button(onClick = { navContoller.navigate((ROUTE_UPLOAD)) }) {
     Text(text = "UploadProduct")
 }
     }

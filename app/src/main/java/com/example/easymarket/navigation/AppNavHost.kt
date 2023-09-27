@@ -1,5 +1,6 @@
 package com.example.easymarket.navigation
 
+import UploadProductsScreen
 import android.window.SplashScreen
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -32,7 +33,15 @@ fun AppNavHost(
         composable(ROUTE_PROFILE){
             ProfileScreen(navController)
         }
+        composable(ROUTE_UPLOAD){
+            UploadProductsScreen(navController)
+        }
 
 
     }
+}
+
+@Composable
+fun UploadProduct(navController: NavHostController) {
+
 }
